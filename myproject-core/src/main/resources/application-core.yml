@@ -1,0 +1,13 @@
+spring:
+  rabbitmq:
+    host: 47.94.195.163
+    port: 5672
+    username: zhangzhen
+    password: zhang
+    # 开启ack
+    listener:
+      simple:
+        acknowledge-mode: manual
+      direct:
+        acknowledge-mode: manual
+    virtual-host: /
